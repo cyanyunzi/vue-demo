@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <b>if</b>
+        <IfDemo/>
+
+        <br/>
+        <b>for</b>
+        <ForDemo/>
+
+        <br/>
+        <b>OnClick</b>
+        <OnClickDemo/>
+
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import IfDemo from './components/language/if-demo.vue'
+    import ForDemo from './components/language/for-demo.vue'
+    import OnClickDemo from './components/language/on-click-demo.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'app',
+        components: {
+            IfDemo, ForDemo, OnClickDemo
+        }
+    }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
